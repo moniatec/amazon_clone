@@ -33,13 +33,13 @@ function Header() {
                         <span className='header__optionLineTwo'>Prime</span>
                     </div>
                 </Link>
-                {/* <Link to='/checkout' className='header__link'>
+                <Link to='/checkout' className='header__link'>
                     <div className='header__optionBasket'>
                         <ShoppingBasketIcon />
                         <span className='header__optionLineTwo header__basketCount'>0</span>
                     </div>
 
-                </Link> */}
+                </Link>
             </div>
         </div>
     )
