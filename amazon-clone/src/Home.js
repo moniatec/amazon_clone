@@ -10,14 +10,56 @@ function Home() {
                 alt=''
             />
 
+            <div className='home__row'>
+                <Product
+                    id='12321341'
+                    title='The Lean Startup'
+                    price={11.96}
+                    rating={5}
+                    image='https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg'
+                />
+                <Product
+                    id='12321341'
+                    title='The Lean Startup'
+                    price={11.96}
+                    rating={5}
+                    image='https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg'
+                />
+                <Product
+                    id='12321341'
+                    title='The Lean Startup'
+                    price={11.96}
+                    rating={5}
+                    image='https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg'
+                />
+            </div>
 
-            <Product
-                id='12321341'
-                title='The Lean Startup'
-                price={11.96}
-                rating={5}
-                image='https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg'
-            />
+            <div className='home__row'>
+                <Product
+                    id='12321341'
+                    title='The Lean Startup'
+                    price={11.96}
+                    rating={5}
+                    image='https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg'
+                />
+                <Product
+                    id='12321341'
+                    title='The Lean Startup'
+                    price={11.96}
+                    rating={5}
+                    image='https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg'
+                />
+            </div>
+
+            <div className='home__row'>
+                <Product
+                    id='12321341'
+                    title='The Lean Startup'
+                    price={11.96}
+                    rating={5}
+                    image='https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg'
+                />
+            </div>
         </div>
     )
 }
