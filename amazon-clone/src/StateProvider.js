@@ -13,3 +13,6 @@ export const StateProvider = ({ reducer, initialState, children }
         { children }
     </StateContext.Provider >
 );
+
+//this is how we use t inside the component
+export const useStateValue = () => useContext(StateContext);
