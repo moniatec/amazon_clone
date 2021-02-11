@@ -1,5 +1,13 @@
 export const initialState = {
-    basket: [],
+    basket: [
+        {
+            id: '12321341',
+            title: 'The Lean Startup',
+            price: 11.96,
+            rating: 5,
+            image: 'https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg',
+        },
+    ],
     user: null,
 }
 
