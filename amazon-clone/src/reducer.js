@@ -21,7 +21,14 @@ function reducer(state, action) {
             }
             break;
         case 'REMOVE_FROM_BASKET':
-            return { state }
+            let newBasket = [...state.basket]
+            const index = state.basket.findIndex((basketItem) => basketItem.id === action.id)
+            if (index >= 0) {
+                newBasket.splice(index, 1)
+
+
+            }
+            return { ...state, basket: newBasket }
             break;
         // case'ADD_TO_BASKET':
         //     break;
@@ -31,3 +38,7 @@ function reducer(state, action) {
 }
 
 export default reducer;
+
+
+//add the remove button
+//4:19
