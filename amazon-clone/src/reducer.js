@@ -40,5 +40,4 @@ function reducer(state, action) {
 export default reducer;
 
 
-//add the remove button
-//4:19
+
