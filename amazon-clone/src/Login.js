@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Login.css'
 import { Link, useHistory } from 'react-router-dom'
+import { auth } from './firebase'
+
 function Login() {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const login = event => {
+        event.preventDefault();//to stop the refresh
+        auth.signInWithEmailAndPassword(email, password)
+    }
+
+    const register = event => {
+        event.preventDefault();//to stop the refresh
+    }
     return (
         <div className='login'>
             <Link to='/'>
@@ -14,10 +26,10 @@ function Login() {
             <div className='login__container'>
                 <h1>Sign in</h1>
                 <form>
-                    <h5>Email</h5>
-                    <input type='email' />
+                    <h5>E-mail</h5>
+                    <input value={email} onChange={event => setEmail(event.target.value)} type='email' />
                     <h5>Password</h5>
-                    <input type='password' />
+                    <input value={password} onChange={event => setPassword(event.target.value)} type='password' />
                     <button onClick={login} type="submit" className='login__signInButton'>Sign In</button>
                     <p>
                         By continuing, you agree to Amazon's Conditions of Use and Privacy
@@ -32,3 +44,4 @@ function Login() {
 }
 
 export default Login
+18: 00
