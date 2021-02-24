@@ -4,15 +4,25 @@ import { Link, useHistory } from 'react-router-dom'
 import { auth } from './firebase'
 
 function Login() {
+    const history = useHistory()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const login = event => {
         event.preventDefault();//to stop the refresh
         auth.signInWithEmailAndPassword(email, password)
+            .then((auth) => {
+                history.push('/')
+            })
+            .catch(e => alert(e.message))
     }
 
     const register = event => {
         event.preventDefault();//to stop the refresh
+        auth.createUserWithEmailAndPassword(email, password)
+            .then((auth) => {
+
+            })
+            .catch(e => alert(e.message))
     }
     return (
         <div className='login'>
@@ -44,4 +54,3 @@ function Login() {
 }
 
 export default Login
-18: 00
